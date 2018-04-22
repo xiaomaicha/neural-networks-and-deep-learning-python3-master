@@ -235,9 +235,9 @@ class Network(object):
         for l in range(2, self.num_layers):
             z = zs[-l]
             sp = sigmoid_prime(z)
-            delta = np.dot(self.weights[-l+1].transpose(), delta) * sp
+            delta = np.dot(self.weights[-l+1].transpose(), delta) * sp #1*i i*j
             nabla_b[-l] = delta
-            nabla_w[-l] = np.dot(delta, activations[-l-1].transpose())
+            nabla_w[-l] = np.dot(delta, activations[-l-1].transpose())  #  1*j j*k
         return (nabla_b, nabla_w)
 
     def accuracy(self, data, convert=False):
