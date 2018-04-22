@@ -1,5 +1,7 @@
 # Code samples for "Neural Networks and Deep Learning"
 
+做了一些修改，使得源代码适用于python3,之后会进一步修改更新。。。
+
 This repository contains code samples for my book on ["Neural Networks
 and Deep Learning"](http://neuralnetworksanddeeplearning.com).
 
